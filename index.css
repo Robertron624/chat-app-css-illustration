@@ -91,6 +91,9 @@ body {
     /* (paragraph) */
     --dark-grayish-violet: hsl(270, 7%, 64%);
 
+    /* chat message background */
+    --lavanda: hsl(272, 41%, 93%);
+
     /* #### Gradients */
 
     /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
@@ -205,7 +208,7 @@ section.container p {
 }
 
 .inner .top .top-left .name p {
-    color: var(--grayish-blue);
+    color: var(--pale-violet);
     font-size: 0.7rem;
 }
 
@@ -241,4 +244,49 @@ section.container p {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 0 0 2rem 2rem;
+}
+
+/* Chat section */
+
+.chat-area {
+    padding: 1rem;
+}
+
+.chat-area .message {
+    padding: .5rem;
+    background-color: var(--lavanda);
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+    max-width: 60%;
+    width: fit-content;
+}
+
+.chat-area .message p {
+    color: var(--moderate-violet);
+    font-size: 10px;
+}
+
+.chat-area .message.other {
+    background-color: var(--white);
+    margin-left: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-area .message.other p {
+    color: var(--desaturated-dark-violet);
+}
+
+.chat-area .images-message{
+    display: flex;
+    max-width: 70%;
+    gap: .6rem;
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.chat-area .images-message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
 }
