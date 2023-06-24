@@ -152,12 +152,14 @@ section.container p {
 .phone {
     height: 662px;
     width: 84%;
+    margin-top: 2rem;
     margin-inline: auto;
     padding: .5rem;
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
+    max-width: 360px;
 }
 
 .phone .inner {
@@ -385,7 +387,7 @@ section.container p {
 .background-shape {
     position: absolute;
     background: linear-gradient(
-        to bottom, var(--light-magenta), var(--light-violet)
+        -120deg, var(--light-magenta), var(--light-violet)
     );
     top: 0;
     left: 0;
@@ -393,4 +395,52 @@ section.container p {
     height: 20rem;
     z-index: -1;
     border-radius: 0 0 220px 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 100%;
+    }
+
+    section.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        gap: 5rem;
+        margin-inline: auto;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left !important;
+    }
+
+    .texts h1 {
+        font-size: 3rem !important;
+    }
+
+    .texts p {
+        max-width: 25rem;
+    }
+
+    .background-shape {
+        width: 400px;
+        height: 700px;
+        border-radius: 0 0 220px 151px;
+    }
+
+    .light-background-shape {
+        right: 0;
+        bottom: 0;
+        width: 23rem;
+        height: 38rem;
+        background-color: var(--lavanda);
+        position: absolute;
+        border-radius: 295px 0 0 0;
+        z-index: -1;
+    }
 }
