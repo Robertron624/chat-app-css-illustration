@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Netlify Live URL](https://dashing-marigold-22f2ad.netlify.app/)
 - Live Site URL: [Github repo](https://github.com/Robertron624/chat-app-css-illustration)
 
 ## My process
