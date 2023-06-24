@@ -126,6 +126,7 @@ body {
 main {
     padding: 1rem;
     height: 100%;
+    position: relative;
 }
 
 /* outside texts */
@@ -149,8 +150,8 @@ section.container p {
 /* Phone */
 
 .phone {
-    height: 634px;
-    width: 90%;
+    height: 662px;
+    width: 84%;
     margin-inline: auto;
     padding: .5rem;
     background-color: var(--white);
@@ -377,4 +378,19 @@ section.container p {
     cursor: pointer;
     width: 30px;
     height: 30px;
+}
+
+/* Background shape */
+
+.background-shape {
+    position: absolute;
+    background: linear-gradient(
+        to bottom, var(--light-magenta), var(--light-violet)
+    );
+    top: 0;
+    left: 0;
+    width: 187.67px;
+    height: 20rem;
+    z-index: -1;
+    border-radius: 0 0 220px 0px;
 }
